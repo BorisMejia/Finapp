@@ -107,16 +107,16 @@
         android:id="@+id/btnSignUp"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/btn_style"
         android:text="Sign Up"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#1C211F"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+        app:layout_constraintTop_toBottomOf="@id/txtPassword" />
 
     <TextView
         android:id="@+id/txtLogIn"
