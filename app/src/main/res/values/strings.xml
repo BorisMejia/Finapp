@@ -3,4 +3,7 @@
     <string name="password">Contraseña</string>
     <string name="email">Correo</string>
 
+    <string name="invalid_mail">Ingrese mail valido</string>
+    <string name="invalid_password">Ingrese un password mayor a 6 digitos</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
