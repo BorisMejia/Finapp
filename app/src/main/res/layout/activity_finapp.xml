@@ -35,6 +35,7 @@
         android:layout_width="155dp"
         android:layout_height="53dp"
         android:layout_marginTop="60dp"
+        android:onClick="vermap"
         android:text="View Map"
         android:textColor="#000000"
         android:textSize="20sp"

@@ -3,6 +3,7 @@ package com.example.finapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,9 +14,11 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Finapp extends AppCompatActivity {
 
     Button btnClose;
+    private Location punto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finapp);
 
@@ -36,5 +39,10 @@ public class Finapp extends AppCompatActivity {
         Intent i = new Intent(this, iLogin.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
+    }
+    public void vermap(View view){
+        Intent intent = new Intent(Finapp.this, MapsActivity.class);
+        intent.putExtra("punto", punto);
+        startActivity(intent);
     }
 }
